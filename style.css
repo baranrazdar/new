@@ -1,0 +1,54 @@
+a:any-link{
+    display: block;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    background-image: url('./img/photo2.jpg'),
+     radial-gradient( rgba(88, 146, 228,1.8) , rgba(21, 39, 65,1.8));
+   background-repeat: repeat;
+   background-size: cover;
+   background-position-x: center;
+   background-position-y: center;
+   gap: 0;
+   margin: 0;
+   padding: 0
+   ;
+}
+
+#ff:hover .p-b-a-l1{
+    animation: grow 4s ease-in-out forwards;
+}
+#ff:hover .p-b-a-l2{
+    animation: grow1 4s ease-in-out forwards;
+}
+#ff:hover .p-b-a-l3{
+    animation: grow2 4s ease-in-out forwards;
+}
+
+@keyframes grow {
+    from { width: 0; }
+    to { width: 80%; }
+  }
+  @keyframes grow1 {
+    from { width: 0; }
+    to { width: 60%; }
+  }
+  @keyframes grow2 {
+    from { width: 0; }
+    to { width: 40%; }
+  }
+  #arrow:hover{
+    animation: grow8 0.2s ease-in-out forwards;
+     transform: translateY(-8px);
+     
+ }
+ @keyframes grow8 {
+   from{ transform: translateY(0px);}
+   to{ transform: translateY(-10px);}
+   
+ }
